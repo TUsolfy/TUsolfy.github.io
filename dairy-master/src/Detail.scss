@@ -1,0 +1,19 @@
+@mixin 함수 {
+  background-color: #eee;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.alert {
+  @include 함수();
+}
+
+.alert2 {
+  @extend .alert;
+  background-color: #333;
+}
+
+.alert p {
+  margin: 0;
+}
